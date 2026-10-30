@@ -1,3 +1,8 @@
+## Scope and meaning of the score
+
+- **Works for:** NASA C-MAPSS FD001 turbofan engines, with the same `cycle` + 16 sensor columns. Other C-MAPSS sets (FD002 to FD004), real engines or other machines need their own run-to-failure data and retraining. Other inputs would still return a score, but it would be meaningless.
+- **Means:** the likelihood that an engine is within 30 cycles of failure (RUL <= 30), based on its recent readings. It does not say whether a machine "works or not".
+
 ## Run locally
 
 ```
