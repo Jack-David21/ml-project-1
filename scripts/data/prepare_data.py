@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 from sklearn.model_selection import GroupShuffleSplit
 
-from features import add_features
+from scripts.features import add_features
 
 SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("data/raw")
 OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("data/processed")

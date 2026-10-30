@@ -4,7 +4,7 @@ import pandas as pd
 from lightgbm import LGBMClassifier
 from sklearn.metrics import (recall_score, precision_score,
                              average_precision_score, confusion_matrix)
-from features import add_features
+from scripts.features import add_features
 
 THRESH_ALARM, K = 0.88, 3
 

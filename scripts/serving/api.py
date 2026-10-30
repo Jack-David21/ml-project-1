@@ -5,7 +5,7 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
-from features import add_features
+from scripts.features import add_features
 
 meta = json.load(open("data/processed/meta.json"))
 KEEP, WINDOW = meta["keep"], meta["window"]
